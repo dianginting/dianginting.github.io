@@ -1,73 +1,150 @@
-# Dian Andrian Ginting — Portfolio
+# Dian Andrian Ginting
 
-Personal portfolio site built as a single-page application with no frameworks or build tools.
+**Platform Architect | AI Systems Engineer | Technical Leader**
+
+11+ years building scalable platforms across job marketplaces, AI-powered SaaS, and consumer products in Southeast Asia.
+
+---
+
+## Projects
+
+### Minto — AI-Powered Warung Management
+
+> Manage your warung smarter. Products, WhatsApp menus, orders, and payments — all powered by AI that speaks your customers' language.
+
+[![Minto](screenshots/minto-hero.png)](https://d2rkpbcratycn6.cloudfront.net)
+
+**Live** : [d2rkpbcratycn6.cloudfront.net](https://d2rkpbcratycn6.cloudfront.net)
+
+**What it does** : All-in-one platform for Indonesian warung owners — product management, WhatsApp menu broadcasting, order tracking, and payment collection, powered by conversational AI.
+
+**Key Features** :
+- AI-powered product & menu management
+- WhatsApp broadcast for daily menus
+- Order tracking & payment collection
+- Built for Indonesian micro-businesses
+
+---
+
+### Temuin — Premium Matchmaking Platform
+
+> Platform Perkenalan Premium #1 di Indonesia. Find someone special with verified profiles, end-to-end encryption, and time-limited introductions.
+
+[![Temuin](screenshots/temuin-hero.png)](https://d1kz7njmgzofm6.cloudfront.net)
+
+**Live** : [d1kz7njmgzofm6.cloudfront.net](https://d1kz7njmgzofm6.cloudfront.net)
+
+**What it does** : A premium matchmaking platform for serious relationship seekers in Indonesia — verified profiles, bank-level encryption, and exclusive introductions with time-limited access links.
+
+**Key Features** :
+- Identity-verified profiles (KTP verification)
+- End-to-end encryption & bank-level data security
+- Time-limited access links for focused introductions
+- 10,000+ active members
+- 2,500+ successful matches
+
+---
+
+## Portfolio Site (Minto Pyramid Structure)
+
+This GitHub Pages site presents my engineering portfolio using the **Minto Pyramid Principle** — leading with impact, then supporting with evidence and technical depth:
+
+```
+1. The Answer   -->  Hero: "I architect multi-brand job marketplace platforms..."
+2. Key Results  -->  10 brands, 86M records, 300+ APIs, AI platform migration
+3. Evidence     -->  Architecture, AI/ML systems, tech stack, leadership
+4. Details      -->  Career timeline, vision & roadmap
+```
+
+**Live** : [dianginting.github.io](https://dianginting.github.io)
+
+### Sections
+
+| # | Section | What's Inside |
+|---|---------|---------------|
+| 1 | **Hero** | Value proposition + animated stat counters |
+| 2 | **Key Results** | 5 impact cards — multi-tenant, AI migration, scale |
+| 3 | **Architecture** | Multi-tenant platform, event-driven search, ranking algorithm |
+| 4 | **AI Platform** | 8 AI systems table (Gemini, GPT-4o, internal models) |
+| 5 | **Tech Stack** | Categorized pill badges across 9 categories |
+| 6 | **Leadership** | Stakeholder negotiation, engineering culture |
+| 7 | **Career Timeline** | Vertical timeline from 2013 to present |
+| 8 | **Vision** | Next 24-month roadmap |
+
+---
+
+## Tech Stack (Across Projects)
+
+```
+Languages    : Groovy, Kotlin, Java, Python, PHP, SQL
+Frameworks   : Micronaut 3.x/4.x, Spring Cloud Gateway, GORM/Hibernate
+AI/NLP       : Gemini 2.0 Flash, GPT-4o Mini, Lingua NLP
+Data         : MySQL 8, Elasticsearch, Redis, Caffeine, R2DBC
+AWS          : Lambda, Kinesis, SQS FIFO, SNS, S3, CloudFront, RDS
+Event        : Debezium 3.0 CDC, SQS FIFO Choreography, JPA Entity Listeners
+Infra        : CloudFront, S3 Static Hosting, GitHub Pages
+Frontend     : HTML/CSS/JS (zero-dependency), responsive dark theme
+```
+
+---
 
 ## Setup GitHub Pages
 
 ### Step 1: Create the Repository
 
 1. Go to [github.com/new](https://github.com/new)
-2. Name the repository `dianginting.github.io` (for a user site) or `portfolio` (for a project site)
+2. Name the repository `dianginting.github.io`
 3. Set visibility to **Public**
-4. Do **not** initialize with a README (you already have one)
+4. Do **not** initialize with a README
 
 ### Step 2: Push the Code
 
 ```bash
-cd /Users/dianginting/IdeaProjects/portfolio
 git init
-git add index.html README.md CNAME
+git add .
 git commit -m "Initial portfolio site"
 git branch -M main
 git remote add origin https://github.com/dianginting/dianginting.github.io.git
 git push -u origin main
 ```
 
-If using a project-level repo (`portfolio`) instead:
-
-```bash
-git remote add origin https://github.com/dianginting/portfolio.git
-git push -u origin main
-```
-
 ### Step 3: Enable GitHub Pages
 
-1. Go to your repository on GitHub
-2. Navigate to **Settings** > **Pages**
-3. Under **Source**, select **Deploy from a branch**
-4. Select the **main** branch and **/ (root)** folder
-5. Click **Save**
+1. Go to your repository **Settings** > **Pages**
+2. Under Source, select **Deploy from a branch**
+3. Select **main** branch and **/ (root)** folder
+4. Click **Save**
 
 ### Step 4: Access Your Site
 
-- **User site**: `https://dianginting.github.io`
-- **Project site**: `https://dianginting.github.io/portfolio`
+Your site will be live at `https://dianginting.github.io` within 1-2 minutes.
 
-The site typically deploys within 1-2 minutes.
-
-### Step 5: Custom Domain (Optional)
-
-1. Purchase a domain from any registrar
-2. Add a CNAME DNS record pointing to `dianginting.github.io`
-3. Edit the `CNAME` file in this repo with your domain (e.g., `dian.dev`)
-4. In **Settings** > **Pages**, enter your custom domain and enable **Enforce HTTPS**
+---
 
 ## Local Preview
 
-Open `index.html` directly in a browser, or serve it locally:
-
 ```bash
-# Python 3
 python3 -m http.server 8000
-
-# Then open http://localhost:8000
+# Open http://localhost:8000
 ```
 
 ## Structure
 
 ```
 portfolio/
-  index.html   - Complete site (HTML + CSS + JS, no dependencies)
-  CNAME         - Custom domain config (empty by default)
-  README.md     - This file
+  index.html              Complete site (HTML + CSS + JS, zero dependencies)
+  screenshots/
+    minto-hero.png         Minto landing page
+    temuin-hero.png        Temuin landing page
+    minto-full.png         Minto full page
+    temuin-full.png        Temuin full page
+  CNAME                    Custom domain config
+  README.md                This file
 ```
+
+---
+
+## Connect
+
+- [GitHub](https://github.com/dianginting)
+- [LinkedIn](https://www.linkedin.com/in/dian-andrian-ginting-5ba533aa/)
